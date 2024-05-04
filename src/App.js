@@ -26,7 +26,7 @@ function App() {
       setViewToaster(false)
     }, 5000);
   }
-
+  
   return (
     <BrowserRouter>
       <div id="app">

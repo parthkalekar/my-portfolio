@@ -1,21 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import "./ContactMe.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    website: "",
+    description: "",
+  });
+
+  const handleChange = async (e) => {
+    e.preventDefault();
+
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setViewLoader(true);
-
-    setTimeout(() => {
+    try {
+      setViewLoader(true);
+      const apiResponse = await axios.post(
+        process.env.REACT_APP_BASE_URL,
+        formData
+      );
+      console.log("RES => ", apiResponse);
+      if (apiResponse.data.result) {
+        setViewLoader(false);
+        setToasterMessage("Thank you for contacting me ❤️");
+      } else {
+        setViewLoader(false);
+        setToasterMessage(
+          "Something went wrong...❗, Contact me on email or phone instead"
+        );
+      }
+    } catch (error) {
       setViewLoader(false);
-      setToasterMessage("Thank you for Contacting Me ❤️");
-      // setToasterMessage(`Something went wrong...❗, Contact me on email or phone instead`);
-      activateToaster();
-    }, 2000);
-
-    // alert("Backend Functionality is under Construction...❗❗❗");
+      setToasterMessage(
+        "Something went wrong...❗, Contact me on email or phone instead"
+      );
+    }
   };
 
   return (
@@ -24,16 +55,37 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
         Contact <strong className="w8">Me</strong>
       </h1>
       <form className="form-part" onSubmit={handleSubmit}>
-        <input type="text" className="txt-field" placeholder="Your name *" />
-        <input type="text" className="txt-field" placeholder="Email *" />
         <input
           type="text"
+          name="name"
+          onChange={handleChange}
+          required
           className="txt-field"
+          placeholder="Your name *"
+        />
+        <input
+          type="email"
+          name="email"
+          onChange={handleChange}
+          required
+          className="txt-field"
+          placeholder="Email *"
+        />
+        <input
+          type="text"
+          name="website"
+          className="txt-field"
+          onChange={handleChange}
           placeholder="Your Website(If Exists)"
         />
         <textarea
           type="text"
+          name="description"
           className="txt-field big-txtbox"
+          onChange={handleChange}
+          required
+          minLength={20}
+          maxLength={150}
           placeholder="How can I Help you? *"
         />
         <div className="form-footer">

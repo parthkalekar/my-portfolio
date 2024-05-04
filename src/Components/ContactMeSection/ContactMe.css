@@ -1,0 +1,144 @@
+#contactme{
+    padding-bottom: 100px;
+    gap: 80px;
+
+}
+
+.form-part{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    
+}
+
+.form-right-part{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.txt-field{
+    box-sizing: border-box;
+    height: 80px;
+    margin: 10px;
+    border: 1.8px solid black;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.big-txtbox{
+    height: 120px;
+    text-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    resize: none;
+}
+
+.form-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.submitbtn{
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: black;
+    width: 200px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitbtn:hover{
+    background-color: #27272a;
+}
+
+.icons-list-inform{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-right: 10px;
+
+}
+.linktag{
+    color: black;
+}
+.contacthead{
+    display: none;
+}
+
+.form-right-part{
+    text-align: left;
+    padding-left: 75px;
+}
+@media only screen and (max-width: 1000px) {
+
+    #contactme{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 100px;
+        gap: 80px;
+        box-sizing: content-box;
+    
+    }
+    .contacthead{
+        display:block;
+        /* margin-bottom: 0px; */
+    }
+    form{
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .form-footer{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        gap: 15px;
+    }
+    .submitbtn{
+        height: 80px;
+        width: 200px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .icons-list-inform{
+        width: 100%;
+        justify-content: start;
+        gap:10%;
+        
+    }
+
+    .txt-field{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .form-right-part{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        gap: 15px;
+    }
+    .email,.phone{
+        font-size: 25px;
+    }
+}

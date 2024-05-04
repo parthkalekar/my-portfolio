@@ -1,0 +1,66 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+.incardicon {
+    width: 80px;
+    height: 80px;
+}
+
+/* display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center; */
+
+@media only screen and (max-width: 1000px) {
+    #skills{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 130%;
+        justify-content: center;
+        gap: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+
+}

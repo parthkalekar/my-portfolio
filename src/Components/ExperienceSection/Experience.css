@@ -1,0 +1,83 @@
+#experience{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 120px;
+    padding-bottom: 100px;
+    margin: 0;
+    background-color: black;
+    /* height: 100vh; */
+    color: whitesmoke;
+}
+
+.exp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.exp-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 12px;
+    padding: 20px 30px;
+    border: 0.5px solid white;
+}
+.exp-part:hover{
+    background-color: #27272a;
+    border-color: #27272a;
+}
+
+.exp-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp-logo{
+    text-align: center;
+    margin-right: 30px;
+}
+.companylogo{
+    width: 30px;
+}
+.exp-title{
+    text-align: left;
+}
+/* .exp-period{
+} */
+.exp-desc{
+    margin-top: 30px;
+    line-height: 24px;
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+ 
+    #experience{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: content-box;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 25px 120px; */
+        /* padding-bottom: 100px; */
+    
+        background-color: black;
+        /* height: 100vh; */
+        color: whitesmoke;
+    }
+
+    .exp-container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* box-sizing: border-box; */
+}
+
+.description {
+    margin-top: 5%;
+    color: #71717a;
+    margin-bottom: 30px;
+}
+
+.icons-list {
+    display: flex;
+    justify-content: start;
+    margin-top: 8%;
+    gap: 40px;
+    margin-bottom: 80px;
+
+    /* justify-content: space-between; */
+
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    transition: 0.2s;
+    border: 2.5px solid black;
+    border-radius: 5px;
+}
+
+.icon:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    #hero {
+        display: flex;
+        box-sizing: content-box;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        /* width: 100%; */
+
+    }
+
+   
+    .hero-img {
+        text-align: center;
+        /* width: 100%; */
+    }
+}

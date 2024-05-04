@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 120px;
+
+}
+
+.logo {
+    width: 50px;
+}
+
+.linktag {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-head {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.plainicon {
+    width: 80%;
+    height: 80%;
+}
+
+.rightpart {
+    justify-content: space-evenly;
+    padding-right: 15%;
+}
+
+.m0 {
+    margin: 1px;
+}
+
+.w4 {
+    font-weight: 400;
+}
+
+.w5 {
+    font-weight: 500;
+}
+
+.w6 {
+    font-weight: 600;
+}
+
+.w7 {
+    font-weight: 700;
+}
+
+.w8 {
+    font-weight: 800;
+}
+
+.m {
+    font-size: 10px;
+}
+
+.l {
+    font-size: 15px;
+
+}
+
+.x {
+    font-size: 25px;
+}
+
+.xl {
+    font-size: 35px;
+}
+
+.xxl {
+    font-size: 45px;
+}
+
+.xxxl {
+    font-size: 55px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flat {
+    border: none;
+    background-color: transparent;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
+.inbtn-icon {
+    width: auto;
+    height: 100%;
+
+}
+
+
+.inline-icon {
+    color: white;
+
+}
+
+.stroke {
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+    .container {
+        /* background-color: rgb(0, 96, 128); */
+        display: flex;
+        flex-direction: column;
+        width: 110%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+}

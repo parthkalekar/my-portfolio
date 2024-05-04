@@ -35,17 +35,20 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
       if (apiResponse.data.result) {
         setViewLoader(false);
         setToasterMessage("Thank you for contacting me ❤️");
+        activateToaster();
       } else {
         setViewLoader(false);
         setToasterMessage(
           "Something went wrong...❗, Contact me on email or phone instead"
         );
+        activateToaster();
       }
     } catch (error) {
       setViewLoader(false);
       setToasterMessage(
         "Something went wrong...❗, Contact me on email or phone instead"
       );
+      activateToaster();
     }
   };
 

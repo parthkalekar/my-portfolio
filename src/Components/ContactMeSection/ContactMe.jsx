@@ -35,12 +35,24 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
         setViewLoader(false);
         setToasterMessage("Thank you for contacting me ❤️");
         activateToaster();
+        setFormData({
+          name: "",
+          email: "",
+          website: "",
+          description: "",
+        });
       } else {
         setViewLoader(false);
         setToasterMessage(
           "Something went wrong...❗, Contact me on email or phone instead"
         );
         activateToaster();
+        setFormData({
+          name: "",
+          email: "",
+          website: "",
+          description: "",
+        });
       }
     } catch (error) {
       setViewLoader(false);
@@ -48,6 +60,12 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
         "Something went wrong...❗, Contact me on email or phone instead"
       );
       activateToaster();
+      setFormData({
+        name: "",
+        email: "",
+        website: "",
+        description: "",
+      });
     }
   };
 
@@ -61,6 +79,7 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
           type="text"
           name="name"
           onChange={handleChange}
+          value={formData.name}
           required
           className="txt-field"
           placeholder="Your name *"
@@ -69,6 +88,7 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
           type="email"
           name="email"
           onChange={handleChange}
+          value={formData.email}
           required
           className="txt-field"
           placeholder="Email *"
@@ -78,6 +98,7 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
           name="website"
           className="txt-field"
           onChange={handleChange}
+          value={formData.website}
           placeholder="Your Website(If Exists)"
         />
         <textarea
@@ -85,6 +106,7 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
           name="description"
           className="txt-field big-txtbox"
           onChange={handleChange}
+          value={formData.description}
           required
           minLength={20}
           maxLength={150}

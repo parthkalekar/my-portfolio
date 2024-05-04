@@ -31,7 +31,6 @@ const ContactMe = ({ setViewLoader, activateToaster, setToasterMessage }) => {
         process.env.REACT_APP_BASE_URL,
         formData
       );
-      console.log("RES => ", apiResponse);
       if (apiResponse.data.result) {
         setViewLoader(false);
         setToasterMessage("Thank you for contacting me ❤️");

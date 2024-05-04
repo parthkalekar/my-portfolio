@@ -1,7 +1,7 @@
 #toaster{
     position: fixed;
     width: 500px;
-    height: 80px;
+    /* height: 80px; */
     top: 20px;
     right: 50px;
     border-radius: 10px;

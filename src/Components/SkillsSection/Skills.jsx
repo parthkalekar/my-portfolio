@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import { FaGitAlt, FaReact, FaJs, FaNode, FaHtml5, FaCss3, FaLeaf, FaGithub , FaDatabase} from "react-icons/fa";
+import {SiExpress} from 'react-icons/si'
 import { FaExclamation } from 'react-icons/fa6'
 const Skills = () => {
   return (
@@ -42,7 +43,7 @@ const Skills = () => {
           <h1>Github</h1>
         </div>
         <div className="card">
-          <FaExclamation className="incardicon" />
+          <SiExpress className="incardicon" />
           <h1>ExpressJs</h1>
         </div>
         <div className="card">

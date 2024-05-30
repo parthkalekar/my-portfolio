@@ -10,13 +10,16 @@ const Skills = () => {
         My <strong className="w8">Skills</strong>
       </h1>
       <div className="card-container">
+        
+        
+       
         <div className="card">
-          <FaGitAlt className="incardicon" />
-          <h1>Git</h1>
+          <FaHtml5 className="incardicon" />
+          <h1>HTML5</h1>
         </div>
         <div className="card">
-          <FaReact className="incardicon" />
-          <h1>ReactJs</h1>
+          <FaCss3 className="incardicon" />
+          <h1>CSS 3</h1>
         </div>
         <div className="card">
           <FaJs className="incardicon" />
@@ -27,29 +30,31 @@ const Skills = () => {
           <h1>NodeJs</h1>
         </div>
         <div className="card">
-          <FaHtml5 className="incardicon" />
-          <h1>HTML5</h1>
-        </div>
-        <div className="card">
-          <FaCss3 className="incardicon" />
-          <h1>CSS 3</h1>
+          <SiExpress className="incardicon" />
+          <h1>ExpressJs</h1>
         </div>
         <div className="card">
           <FaLeaf className="incardicon" />
           <h1>MongoDB</h1>
         </div>
         <div className="card">
-          <FaGithub className="incardicon" />
-          <h1>Github</h1>
-        </div>
-        <div className="card">
-          <SiExpress className="incardicon" />
-          <h1>ExpressJs</h1>
-        </div>
-        <div className="card">
           <FaDatabase className="incardicon" />
           <h1>MySQL</h1>
         </div>
+        <div className="card">
+          <FaReact className="incardicon" />
+          <h1>ReactJs</h1>
+        </div>
+        <div className="card">
+          <FaGitAlt className="incardicon" />
+          <h1>Git</h1>
+        </div>
+        <div className="card">
+          <FaGithub className="incardicon" />
+          <h1>Github</h1>
+        </div>
+        
+        
       </div>
     </section>
   );

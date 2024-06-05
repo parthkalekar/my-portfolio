@@ -56,7 +56,7 @@ const Navbar = ({viewCollapse,setViewCollapse}) => {
             <button className="col-btn" onClick={() =>{setViewCollapse(false)}}>X</button>
           </div>
           <div className="col-navmenu">
-          <a href="https://drive.google.com/file/d/1N-REzr0HxKrAdDrvUzrNh5RMxv9ya8fM/view" className="w6 col-navoption col-resume" onClick={()=>{setViewCollapse(false)}}>
+          <a href="https://drive.google.com/file/d/1N-REzr0HxKrAdDrvUzrNh5RMxv9ya8fM/view" target="_blank" className="w6 col-navoption col-resume" onClick={()=>{setViewCollapse(false)}}>
               Resume <MdDownload />
             </a>
             <a href="#aboutme" className="w6 col-navoption " onClick={()=>{setViewCollapse(false)}}>

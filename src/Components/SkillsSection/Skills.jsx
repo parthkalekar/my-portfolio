@@ -1,8 +1,8 @@
 import React from "react";
 import "./Skills.css";
-import { FaGitAlt, FaReact, FaJs, FaNode, FaHtml5, FaCss3, FaLeaf, FaGithub , FaDatabase} from "react-icons/fa";
+import { FaGitAlt, FaReact, FaJs, FaNode, FaHtml5, FaCss3, FaLeaf, FaGithub , FaDatabase, FaPython} from "react-icons/fa";
 import {SiExpress} from 'react-icons/si'
-import { FaExclamation } from 'react-icons/fa6'
+
 const Skills = () => {
   return (
     <section className="container" id="skills">
@@ -28,6 +28,10 @@ const Skills = () => {
         <div className="card">
           <FaNode className="incardicon" />
           <h1>NodeJs</h1>
+        </div>
+        <div className="card">
+          <FaPython className="incardicon" />
+          <h1>Python</h1>
         </div>
         <div className="card">
           <SiExpress className="incardicon" />

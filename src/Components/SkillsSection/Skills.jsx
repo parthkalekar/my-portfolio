@@ -1,7 +1,8 @@
 import React from "react";
 import "./Skills.css";
 import { FaGitAlt, FaReact, FaJs, FaNode, FaHtml5, FaCss3, FaLeaf, FaGithub , FaDatabase, FaPython} from "react-icons/fa";
-import {SiExpress} from 'react-icons/si'
+import {SiExpress , SiGithubactions, SiSocketdotio, SiFirebase  } from 'react-icons/si'
+import { TbBrandReactNative } from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -50,6 +51,10 @@ const Skills = () => {
           <h1>ReactJs</h1>
         </div>
         <div className="card">
+          <TbBrandReactNative className="incardicon" />
+          <h1>React Native</h1>
+        </div>
+        <div className="card">
           <FaGitAlt className="incardicon" />
           <h1>Git</h1>
         </div>
@@ -57,8 +62,18 @@ const Skills = () => {
           <FaGithub className="incardicon" />
           <h1>Github</h1>
         </div>
-        
-        
+         <div className="card">
+          <SiGithubactions className="incardicon" />
+          <h1>Github Actions</h1>
+        </div>
+         <div className="card">
+          <SiSocketdotio className="incardicon" />
+          <h1>Socket IO</h1>
+        </div>
+         <div className="card">
+          <SiFirebase className="incardicon" />
+          <h1>Firebase</h1>
+        </div>
       </div>
     </section>
   );

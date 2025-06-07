@@ -33,7 +33,7 @@ const Navbar = ({viewCollapse,setViewCollapse}) => {
       <div>
         <Link
           className="linktag"
-          to="https://drive.google.com/file/d/1N-REzr0HxKrAdDrvUzrNh5RMxv9ya8fM/view?usp=sharing"
+          to="https://drive.google.com/file/d/1U8dJoN4VDOK1m11V7M_r0Kfn6EWYE9Yg/view?usp=sharing"
           target="_blank"
         >
           <button className="flat resumebtn">
